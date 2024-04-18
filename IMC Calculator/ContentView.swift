@@ -12,12 +12,15 @@ struct ContentView: View {
     @State private var personWeight: String = ""
     var body: some View {
         VStack(alignment: .center) {
+            Spacer()
             Text("IMC CALCULATOR")
                 .bold()
-                .padding(.top, 20)
-            Spacer()
+//                .padding(.top, 20)
+                .foregroundColor(Color("TextColor"))
+                .font(.system(size: 38))
+//            Spacer()
                 RoundedRectangle(cornerRadius: 20)
-                           .foregroundColor(.gray)
+                           .foregroundColor(Color("DialogColor"))
                            .padding()
                            .frame(height: 200)
                            .overlay(
@@ -42,13 +45,13 @@ struct ContentView: View {
                             Text("Calcular")
                                 .foregroundColor(.white)
                                 .padding()
-                                .background(.red)
+                                .background(Color("TextColor"))
                                 .cornerRadius(4)
                         }
                         .padding(.top, 8) 
             Spacer()
         }.background(
-            Color(.yellow)
+            Color(Color("BackgroundColor"))
         )
     }
 }
