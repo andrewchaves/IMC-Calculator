@@ -1,0 +1,46 @@
+# Xcode-specific
+*.xcuserstate
+*.xcscmblueprint
+*.xcodeproj/xcuserdata
+*.xcodeproj/project.xcworkspace/xcshareddata
+*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcodeproj/project.xcworkspace/xcshareddata/dvcs/
+
+# Build artifacts
+build/
+DerivedData/
+*.xcarchive
+
+# Personal user settings and configurations
+*.pbxproj
+*.xcscheme
+xcuserdata/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.lock
+*.bak
+*~
+
+# CocoaPods files
+Pods/
+Podfile.lock
+
+# Carthage files
+Carthage/Build/
+Carthage/Checkouts/
+
+# Fastlane files
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Other tools
+*.env
+*.iml
